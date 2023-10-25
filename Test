@@ -1,0 +1,20 @@
+Checking size of Response Body and Header
+
+
+// Checking response body size is more than 200bytes
+pm.test("verify the response size of body", function() {
+   pm.expect(pm.response.responseSize).to.be.greaterThan(200);
+   console.log("Size of body:")
+   let responseSize=pm.response.size();
+
+// Checking response headers size is more than 500bytes
+   console.log("Size of header:")
+
+// Checking total size more than 700
+   console.log("Total:")
+   console.log(Number(responseSize.total))
+      console.log("Body:")
+   console.log(Number(responseSize.body))
+   console.log("Header:")
+   console.log(Number(responseSize.header))
+   });
