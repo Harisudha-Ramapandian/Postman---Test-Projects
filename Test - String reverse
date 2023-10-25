@@ -1,0 +1,7 @@
+// To reverse the string
+
+let string = "doggie"
+	string = [...string].reverse().join("");
+	console.log("Reverse string="+string); 	
+
+   
